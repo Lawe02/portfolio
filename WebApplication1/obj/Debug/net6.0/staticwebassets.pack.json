@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\WebApplication1.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\lawza\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\.net.png",
+      "PackagePath": "staticwebassets\\.net.png"
+    },
+    {
+      "Id": "C:\\Users\\lawza\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\anka.jpg",
+      "PackagePath": "staticwebassets\\anka.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lawza\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\bank.png",
+      "PackagePath": "staticwebassets\\bank.png"
+    },
+    {
+      "Id": "C:\\Users\\lawza\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\c#bild.png",
+      "PackagePath": "staticwebassets\\c#bild.png"
+    },
+    {
       "Id": "C:\\Users\\lawza\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -13,8 +29,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\lawza\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fotboll.png",
+      "PackagePath": "staticwebassets\\fotboll.png"
+    },
+    {
+      "Id": "C:\\Users\\lawza\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js.png",
+      "PackagePath": "staticwebassets\\js.png"
+    },
+    {
       "Id": "C:\\Users\\lawza\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\lawza\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\jvanillas.png",
+      "PackagePath": "staticwebassets\\jvanillas.png"
     },
     {
       "Id": "C:\\Users\\lawza\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -243,6 +271,10 @@
     {
       "Id": "C:\\Users\\lawza\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\lawza\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\sqlsrvr.png",
+      "PackagePath": "staticwebassets\\sqlsrvr.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props",

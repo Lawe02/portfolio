@@ -7,24 +7,30 @@
 
     <!-- First Grid: Logo & About -->
     <div class="w3-row">
-        <div class="w3-half w3-container w3-center" style="height:700px; background-color: darkgoldenrod">
-            <div class="w3-padding-64">
-                <h1 style="color: #007ACC;">My Logo</h1>
+        <div class="w3-half w3-container w3-center" style="height:700px; background-color: darkslategrey">
+            <div class="w3-padding-64" style="font-size:24px">
+                <span id="text-container"></span><span class="custom-cursor" id="cursor">|</span>
             </div>
-            <div class="w3-padding-64">
-                <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
-                <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">My Work</a>
-                <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Resume</a>
-                <a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contact</a>
-            </div>
+                <img src="/anka.jpg" alt="Your Image" class="round-image">
+            <div class="rolling-content">
+                <h3 style="color:darkkhaki; margin-top:-3px; margin-bottom:-15px;">________</h3>
+                <p style="margin-top: 29px; color:bisque">.NET Fullstack Developer student </p>
+                <p style="margin-top:1rem; color:bisque">Based in Stockholm Sweden.</p>
+           </div>
         </div>
-        <div class="w3-half w3-container" style="height:700px; background-color: darkkhaki">
-            <div class="w3-padding-64 w3-center">
-                <h1 style="color: #007ACC;">About Me</h1>
-                <img src="/w3images/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
-                <div class="w3-left-align w3-padding-large">
-                    <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                    <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <div class="w3-half w3-container" style="height:700px; background-color: darkkhaki">
+                <div class="w3-padding-64 w3-center">
+                <div class="rolling-content" style="margin-top:10%">
+                    <h2 style="color: darkslategrey;">About Me</h2>
+                    <div class="w3-left-align w3-padding-large">
+                        <p style="margin-bottom: -5px; margin-top:20px;">Hi, my name is Lawe and I live in a suburb in south of Stockholm named Hökarängen with my mom, dad, and one year younger brother</p>
+                        <div style="color:darkslategrey; font-size:30px; margin-bottom:20px;" class="w3-center w3">_____________</div>
+                        <p>I am currently studying to become a .Net full-stack developer with a focus on the backend at KYH-Yrkeshögskola. My passion for coding is within the backend because I like to make things work, but of course, a great UI is a must for good applications.</p>
+                    </div>
+                    <div class="frame">
+                        
+                        <button class="custom-btn btn-5"><span><a class="transparent-nav-item" href="#contact" style="color: white; " onmouseover="this.style.color='darkslategrey';" onmouseout="this.style.color='white';">Let'   s Talk!</a></span></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -32,98 +38,142 @@
 
     <!-- Second Grid: Work & Resume -->
     <div class="w3-row">
-        <div class="w3-half w3-center" style="min-height:800px; background-color: #556B2F" id="work">
+        <div class="w3-half w3-center" style="min-height:800px; background-color: darkgoldenrod" id="work">
             <div class="w3-padding-64">
-                <h2 style="color: #007ACC;">My Work</h2>
-                <p>Some of my latest projects.</p>
+                <h2 style="color: white;">My Work</h2>
             </div>
-            <div class="w3-row">
-                <div class="w3-half">
-                    <img src="/w3images/coffee.jpg" style="width:100%">
+            <div style="font-size:20px; margin-top:-70px; margin-bottom:30px; color:#36454F;">____________</div>
+            <div class="item-row">
+                <div class="portfolio-item">
+                    <div class="image-wrapper">
+                        <img src="~/fotboll.png" alt="Project Image">
+                        <div class="overlay">
+                            <div class="details">
+                                <h3>Footbal stats app</h3>
+                                <p>Football statistics app made with node.js.</p>
+                                <a href="https://fchavre.herokuapp.com/">View Project</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="w3-half">
-                    <img src="/w3images/workbench.jpg" style="width:100%">
+                <div class="portfolio-item">
+                    <div class="image-wrapper">
+                        <img src="~/bank.png" alt="Project Image">
+                        <div class="overlay">
+                            <div class="details">
+                                <h3>Bank App</h3>
+                                <p>An ASP.NET Bank application.</p>
+                                <a href="#">View Project</a>
+                            </div>f
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="w3-row w3-hide-small">
-                <div class="w3-half">
-                    <img src="/w3images/workbench.jpg" style="width:100%">
-                </div>
-                <div class="w3-half">
-                    <img src="/w3images/coffee.jpg" style="width:100%">
-                </div>
-            </div>
-
-            <div class="w3-row w3-hide-small">
-                <div class="w3-half">
-                    <img src="/w3images/sound.jpg" style="width:100%">
-                </div>
-                <div class="w3-half">
-                    <img src="/w3images/workbench.jpg" style="width:100%">
-                </div>
-            </div><br>
-            <p>Just call me awesome.</p>
         </div>
         <div class="w3-half w3-container" style="min-height:800px; background-color:#36454F ">
             <div class="w3-padding-64 w3-center">
-                <h2 style="color: #FFFFFF;">Resume</h2>
-                <p>A draft from my CV</p>
-                <div class="w3-container w3-responsive">
-                    <table class="w3-table">
-                        <tr>
-                            <th style="color: #D0D0D0;">Year</th>
-                            <th style="color: #D0D0D0;">Title</th>
-                            <th style="color: #D0D0D0;">Where</th>
-                        </tr>
-                        <tr class="w3-white">
-                            <td>2012-2016</td>
-                            <td>The rest is history..</td>
-                            <td>Lorem ipsum</td>
-                        </tr>
-                        <tr>
-                            <td>2009-2012</td>
-                            <td>Started my own company</td>
-                            <td>My Garage</td>
-                        </tr>
-                        <tr class="w3-white">
-                            <td>2008-2009</td>
-                            <td>Started working for Lorem</td>
-                            <td>London, UK</td>
-                        </tr>
-                        <tr>
-                            <td>2005-2008</td>
-                            <td>Degree in Bachelor of Design</td>
-                            <td>Harvard, USA</td>
-                        </tr>
-                        <tr class="w3-white">
-                            <td>2002-2005</td>
-                            <td>Degree in Bachelor of Business</td>
-                            <td>RMIT University, Melbourne, Australia</td>
-                        </tr>
-                        <tr class="w3-hide-medium">
-                            <td>2002-2005</td>
-                            <td>Degree in Bachelor of Business</td>
-                            <td>RMIT University, Melbourne, Australia</td>
-                        </tr>
-                    </table>
+                <h2 style="color: #FFFFFF;">Skills</h2>
+                <div style="font-size:20px; margin-top:-0px; margin-bottom:0px; color:black;">____________</div>
+                <h4 style="color:darkgoldenrod">Backend</h4>
+                <section>
+                    <div class="row w3-center">
+                        <div class="icon-container">
+                            <i class="devicon devicon-csharp-plain colored"></i>
+                            <p>Basic</p>
+                        </div>
+
+                        <div class="icon-container">
+                            <i class="devicon devicon-dotnetcore-plain colored"></i>
+                            <p>Basic</p>
+                        </div>
+                        <div class="icon-container">
+                            <i class="devicon devicon-nodejs-plain colored"></i>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row w3-center">
+                        <div class="row w3-center">
+                            <div class="icon-container">
+                                <i class="devicon devicon-heroku-plain-wordmark colored"></i>
+                                <p>Basic</p>
+                            </div>
+
+                            <div class="icon-container">
+                                <i class="devicon devicon-microsoftsqlserver-plain-wordmark"></i>
+                                <p>Basic</p>
+                        </div>@*
+                            <div class="icon-container">
+                            <i class="devicon devicon-express-original-wordmark colored"></i>
+                            <p>Basic</p>*@
+                            @*</div>*@
+                        </div>
+                        </div>
+                </section>
+                <h4 style="color: darkgoldenrod">Frontend</h4>
+                <section>
+                    <div class="row">
+                        <div class="icon-container">
+                            <i class="devicon devicon-html5-plain colored"></i>
+                            <p>Basic</p>
+                        </div>
+
+                        <div class="icon-container">
+                            <i class="devicon devicon-css3-plain colored"></i>
+                            <p>Basic</p>
+                        </div>
+                        <div class="icon-container">
+                            <i class="devicon devicon-javascript-plain colored"></i>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="icon-container" style="width: -50px;">
+                            <i class="devicon devicon-bootstrap-plain colored"></i>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+                </section>
+
+
                 </div>
             </div>
         </div>
-    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Third Grid: Swing By & Contact -->
     <div class="w3-row" id="contact">
-        <div class="w3-half w3-container w3-center" style="height:700px; background-color: #800080 ">
+        <div class="w3-half w3-container w3-center" style="height: 700px; background-color: #800080;">
             <div class="w3-padding-64">
-                <h1 style="color: #FFFFFF;">Swing By</h1>
+                <h1 style="color: #FFFFFF;">Know more</h1>
             </div>
-            <div class="w3-padding-64">
-                <p style="color: #D0D0D0;">..for a cup of coffee, or whatever.</p>
-                <p style="color: #D0D0D0;">Chicago, US</p>
-                <p style="color: #D0D0D0;">+00 1515151515</p>
-                <p style="color: #D0D0D0;">test@test.com</p>
+            <div class="w3-padding-10">
+                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <a href="mailto:test@test.com" class="social-link" style="margin-right: 20px;">
+                        <i class="far fa-envelope fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="social-link" style="margin-right: 20px;">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="social-link">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </div>
+                <div class="light-background">
+                    <a href="" class="btn-slide">
+                        <span class="circle" style="position:center"><i class="fa fa-download"></i></span>
+                        <span class="title">Download </span>
+                        <span class="title-hover"> CV</span>
+                    </a>
+                </div>
             </div>
         </div>
+
         <div class="w3-half w3-container" style="height:700px; background-color: #006766 ">
             <div class="w3-padding-64 w3-padding-large">
                 <h1 style="color: #FFFFFF;">Contact</h1>
@@ -152,31 +202,12 @@
         <p style="color: #D0D0D0;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </footer>
     <nav id="navigation">
+        <a class="transparent-nav-item" href="#"><i class="fa-regular fa-house"></i></a>
         <a class="transparent-nav-item" href="#work"><i class="fa-solid fa-code"></i></a>
         <a class="transparent-nav-item" href="#contact"><i class="fa-regular fa-message-middle"></i></a>
-        <a class="transparent-nav-item" href="#"><i class="fa-regular fa-house"></i></a>
-        <a class="transparent-nav-item" href="#"><i class="fa-regular fa-address-card"></i></a>
     </nav>
-    <style>
-        /* CSS for the navigation item */
-        #navigation {
-            width: 300px;
-            border-radius: 20px;
-            background-color: rgba(128, 128, 128, 0.7); /* Transparent gray */
-            padding: 10px;
-            color: white;
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex; /* Added */
-            justify-content: center; /* Added */
-            align-items: center; /* Added */
-        }
-        .transparent-nav-item {          
-            text-decoration: none;
-            margin: 0 10px;
-        }
-    </style>
-
 </body>
+
+    <style>
+
+    </style>

@@ -29,3 +29,7 @@ C:\Users\lawza\source\repos\WebApplication1\WebApplication1\obj\Debug\net6.0\ref
 C:\Users\lawza\source\repos\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.pdb
 C:\Users\lawza\source\repos\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.genruntimeconfig.cache
 C:\Users\lawza\source\repos\WebApplication1\WebApplication1\obj\Debug\net6.0\ref\WebApplication1.dll
+C:\Users\lawza\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\SuperLibrary.dll
+C:\Users\lawza\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\SuperLibrary.pdb
+C:\Users\lawza\source\repos\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.csproj.CopyComplete
+C:\Users\lawza\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\Newtonsoft.Json.dll

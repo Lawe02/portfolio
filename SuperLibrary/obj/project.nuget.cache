@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "54NMIUkUF6V5v5lORwILElyoW1qBdifMYUFWikwocj/Ma25RbmtU4ym7CsKNiRb0guYKQ7Lm/pHmu59UGYTYug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lawza\\source\\repos\\WebApplication1\\SuperLibrary\\SuperLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lawza\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
