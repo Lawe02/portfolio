@@ -37,5 +37,5 @@ To deploy this project/API, consider the following:
 
 ## Links :link:
 
-- [API](https://apiportf20230622023836.azurewebsites.net) :cloud:
+- [API](https://apiportf20230622023836.azurewebsites.net/swagger) :cloud:
 - [Portfolio Web App](https://portfoliolz.azurewebsites.net) :globe_with_meridians:
