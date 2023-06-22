@@ -39,15 +39,3 @@ To deploy this project/API, consider the following:
 
 - [API](https://apiportf20230622023836.azurewebsites.net) :cloud:
 - [Portfolio Web App](https://portfoliolz.azurewebsites.net) :globe_with_meridians:
-
-Please note that the provided links may not be active or valid, as they serve as placeholders in this example.
-
-## Contributors :busts_in_silhouette:
-
-- [Your Name](mailto:your-email@example.com) :email:
-
-Feel free to contact the contributors for any inquiries or feedback.
-
----
-
-This README provides an overview of the project/API, its components, and the methods/principles used in its development. For further details, refer to the project's source code and documentation.
