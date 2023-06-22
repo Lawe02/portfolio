@@ -29,7 +29,7 @@
                     </div>
                     <div class="frame">
                         
-                        <button class="custom-btn btn-5"><span><a class="transparent-nav-item" href="#contact" style="color: white; " onmouseover="this.style.color='darkslategrey';" onmouseout="this.style.color='white';">Let'   s Talk!</a></span></button>
+                        <button id="scrollButton" class="custom-btn btn-5" onclick="scrollDown('contact')"><span><a class="transparent-nav-item" style="color: white; " onmouseover="this.style.color='darkslategrey';" onmouseout="this.style.color='white';">Let's Talk!</a></span></button>
                     </div>
                 </div>
             </div>
@@ -44,30 +44,21 @@
             </div>
             <div style="font-size:20px; margin-top:-70px; margin-bottom:30px; color:#36454F;">____________</div>
             <div class="item-row">
-                <div class="portfolio-item">
-                    <div class="image-wrapper">
-                        <img src="~/fotboll.png" alt="Project Image">
-                        <div class="overlay">
-                            <div class="details">
-                                <h3>Footbal stats app</h3>
-                                <p>Football statistics app made with node.js.</p>
-                                <a href="https://fchavre.herokuapp.com/">View Project</a>
+                @foreach (var item in @Model.PortfolioItems)
+                {
+                    <div class="portfolio-item">
+                        <div class="image-wrapper">
+                            <img src="@item.ImageUrl" alt="Project Image">
+                            <div class="overlay">
+                                <div class="details">
+                                    <h3>@item.Title</h3>
+                                    <p>@item.Description</p>
+                                    <a href="@item.GitHub">View Project</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image-wrapper">
-                        <img src="~/bank.png" alt="Project Image">
-                        <div class="overlay">
-                            <div class="details">
-                                <h3>Bank App</h3>
-                                <p>An ASP.NET Bank application.</p>
-                                <a href="#">View Project</a>
-                            </div>f
-                        </div>
-                    </div>
-                </div>
+                }
             </div>
         </div>
         <div class="w3-half w3-container" style="min-height:800px; background-color:#36454F ">
@@ -141,7 +132,7 @@
 
                 </div>
             </div>
-        </div>
+            </div>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -165,7 +156,7 @@
                     </a>
                 </div>
                 <div class="light-background">
-                    <a href="" class="btn-slide">
+                    <a href="" class="btn-slide" download>
                         <span class="circle" style="position:center"><i class="fa fa-download"></i></span>
                         <span class="title">Download </span>
                         <span class="title-hover"> CV</span>
@@ -178,29 +169,41 @@
             <div class="w3-padding-64 w3-padding-large">
                 <h1 style="color: #FFFFFF;">Contact</h1>
                 <p class="w3-opacity" style="color: #D0D0D0;">GET IN TOUCH</p>
-                <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
+                <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank" >
                     <div class="w3-section">
                         <label style="color: #D0D0D0;">Name</label>
-                        <input class="w3-input" style="width:100%;" type="text" required name="Name">
+                        <input class="w3-input" style="width:100%;" type="text" required name="Name" id="name" onkeyup=validateName(event)>
+                        <span id="nameError" style="color: red;"></span>
                     </div>
                     <div class="w3-section">
                         <label style="color: #D0D0D0;">Email</label>
-                        <input class="w3-input" style="width:100%;" type="text" required name="Email">
+                        <input class="w3-input" style="width:100%;" type="text" required name="Email" id="email" onkeyup=validateEmail(event)>
+                        <span id="emailError" style="color: red;"></span>
                     </div>
                     <div class="w3-section">
                         <label style="color: #D0D0D0;">Message</label>
-                        <input class="w3-input" style="width:100%;" type="text" required name="Message">
+                        <input class="w3-input" style="width:100%;" type="text" required name="Message" id="message" onkeyup=validateMessage(event)>
+                        <span id="messageError" style="color: red;"></span>
                     </div>
                     <button type="submit" class="w3-button w3-teal w3-right">Send</button>
                 </form>
             </div>
         </div>
-    </div>
+        </div>
+
 
     <!-- Footer -->
-    <footer class="w3-container w3-black w3-padding-16">
-        <p style="color: #D0D0D0;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <footer class="w3-black w3-padding-64 w3-text-grey w3-xlarge">
+        <div style="margin-left: 40px">
+            <a href="#" class="fa fa-linkedin w3-hover-opacity"></a>
+            <a href="#" class="fa fa-github w3-hover-opacity"></a>
+            <a href="mailto:your@email.com" class="fa fa-envelope w3-hover-opacity"></a>
+            <p class="w3-medium">Temperature: <span id="temperature"></span>@Model.Temprature C</p>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        </div>
     </footer>
+
+
     <nav id="navigation">
         <a class="transparent-nav-item" href="#"><i class="fa-regular fa-house"></i></a>
         <a class="transparent-nav-item" href="#work"><i class="fa-solid fa-code"></i></a>
@@ -211,3 +214,36 @@
     <style>
 
     </style>
+     <script>
+    const validateName = (event) => {
+        const regEx = /^[a-zA-Z -]+$/;
+
+        if (!regEx.test(event.target.value)) {
+            document.getElementById("nameError").innerText = "Ange ett riktigt namn";
+        }
+        else {
+            document.getElementById("nameError").innerText = "";
+        }
+    }
+
+    const validateEmail = (event) => {
+
+
+    if (event.target.value=="") {
+            document.getElementById("emailError").innerText = "Ange en e-post address";
+    }
+    else {
+            document.getElementById("emailError").innerText = "";
+    }
+}
+    const validateMessage= (event) => {
+
+
+        if (event.target.value == "") {
+            document.getElementById("messageError").innerText = "Ange ett meddelande tack";
+        }
+        else {
+            document.getElementById("messageError").innerText = "";
+        }
+    }
+     </script>

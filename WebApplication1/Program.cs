@@ -5,9 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddTransient<WeatherForecastService, WeatherForecastService>();
+builder.Services.AddTransient<ItemService, ItemService>();
 var app = builder.Build();
-var service = new WeatherForecastService();
-await service.GetWeatherAsync();
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
