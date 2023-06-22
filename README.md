@@ -1,9 +1,5 @@
 <h1 align="center">Project/API Readme :rocket:</h1>
 
-<p align="center">
-    <img src="https://your-project-logo-url" alt="Project Logo">
-</p>
-
 <p align="center">📄 A comprehensive description of the project/API, including methods, patterns, and principles used.</p>
 
 ## Description :page_with_curl:
